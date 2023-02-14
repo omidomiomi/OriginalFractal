@@ -1,9 +1,9 @@
 public void myFractal(int x, int y, int r){
   if(r == 0){
-    ellipse(x,y,20);
+    ellipse(x,y,20,20);
   }
   else{
-    ellipse(x,y,r);
+    ellipse(x,y,r,r+2);
     myFractal(x-10,y+10,r-1);
   }
 }
